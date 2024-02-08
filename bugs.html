@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Therapy</title>
+    </head>
+    <body>
+        <style>
+
+            html {
+                scroll-behavior: smooth;
+                background: black;
+            }
+
+            .navbar {
+                position: fixed;
+                text-align: center;
+                background-color: rgb(172, 179, 216);
+                top: -1px;
+                left: -1px;
+                width: 100.1%;
+                height: 50px;
+                z-index: 4;
+            }
+            
+            #navbar-logo {
+                position: relative;
+                color: white;
+                left: -340px;
+            }
+
+            #nav-signup {
+                border: none;
+                background-color: transparent; 
+                color: rgb(255, 255, 255); 
+                border-radius: 5px;
+                border: 2px solid #ffffff;
+            }
+
+            #nav-signin {
+                border: none;
+                background-color: transparent; 
+                color: rgb(255, 255, 255); 
+                border-radius: 5px;
+                border: 2px solid #ffffff;
+            }
+
+            .interaction {
+                position: relative;
+                top: -35px;
+                left: 290px;
+                display: block;
+            }
+
+            .header {
+                position: absolute;
+                top: 48px;
+                left: 0px;
+                width: 100%;
+                height: 600px;
+                text-align: center;
+                color: white;
+                background: linear-gradient(-45deg, rgb(6, 44, 234), rgb(172, 179, 216), rgb(153, 162, 207),rgb(172, 179, 216));
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+            }
+            
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            #header-p1 {
+                position: relative;
+                font-size: 50px;
+                top: 90px;
+            }
+
+            #header-p2 {
+                position: relative;
+                font-size: 50px;
+                top: 30px;
+            }
+
+            #header-p3 {
+                position: relative;
+                top: -10px;
+            }
+
+            #header-signup {
+                width: 360px;
+                height: 50px;
+                border-radius: 25px;
+                border: none;
+                text-decoration: none;
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+            }
+
+            #header-signup:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+
+            #header-line-left {
+                position: relative;
+                top: 36px;
+                left: 480px;
+                background-color: #fff;
+                height: 1px;
+                opacity: 80%;
+                width: 132px;
+            }
+
+            #header-line-right {
+                position: relative;
+                top: 4px;
+                left: 690px;
+                background-color: #fff;
+                height: 1px;
+                opacity: 80%;
+                width: 132px;
+            }
+
+            #android {
+                position: relative ;
+                top: 40px;
+                border-radius: 10px;
+                width: 350px;
+                height: 80px;
+                border: none;
+            }
+
+            #android-img {
+                width: 129px;
+                height: auto;
+            }
+
+            #android-txt {
+                position: relative;
+                top: -30px;
+                font-size: x-small;
+            }
+
+            .programs {
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                top: 830px;
+                left:-0.2px;
+                width: 100%;
+                height: 1070px;
+                text-align: center;
+            }
+
+            .Physical-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 100px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #physical-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(255, 255, 255);
+                }
+                #physical-title {
+                    position: relative; font-size: 25px; top: -300px; left: 100px; width:500px;
+                }
+                #physical-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 195px; width: 600px; opacity: 50%
+                }
+                #physical-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 208px; width:600px; opacity: 50%
+                }
+                #physical-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 218px; width:600px; opacity: 50%
+                }
+
+            .Occupational-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 150px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #occupational-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(172, 179, 216);
+                }
+                #occupational-title {
+                    position: relative; font-size: 25px; top: -300px; left: 125px; width:500px;
+                }
+                #occupational-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 185px; width: 600px; opacity: 50%
+                }
+                #occupational-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 208px; width:600px; opacity: 50%
+                }
+                #occupational-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 198px; width:600px; opacity: 50%
+                }
+
+            .Speech-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 200px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #speech-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(172, 179, 216);
+                }
+                #speech-title {
+                    position: relative; font-size: 25px; top: -300px; left: 93px; width:500px;
+                }
+                #speech-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 208px; width: 600px; opacity: 50%
+                }
+                #speech-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 193px; width:600px; opacity: 50%
+                }
+                #speech-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 182px; width:600px; opacity: 50%
+                }
+
+            .Massage-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 250px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #massage-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(172, 179, 216);
+                }
+                #massage-title {
+                    position: relative; font-size: 25px; top: -300px; left: 93px; width:500px;
+                }
+                #massage-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 208px; width: 600px; opacity: 50%;
+                }
+                #massage-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 193px; width:600px; opacity: 50%;
+                }
+                #massage-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 182px; width:600px; opacity: 50%;
+                }
+
+            .footer {
+                position: absolute;
+                top: 1715px;
+                width: 100%;
+                left:-0.2px;
+                height: 500px;
+                text-align: left;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .contact-info {
+                position: relative; 
+                border-radius: 25px;
+                width: 90vw; height: 400px;
+                margin-top: auto; margin-bottom: auto;
+                margin-left: auto; margin-right: auto;
+                background: rgb(172, 179, 216); 
+            }
+
+            #contact-p1 {
+                position: relative;
+                top: 40px; left: 50px;
+                font-size: 60px; color: white;
+            }
+
+            #contact-p2 {
+                position: relative;
+                top: -10px; left: 50px;
+                font-size: 60px; color: white;
+            }
+
+            #contact-p3 {
+                position: relative;
+                top: -50px; left: 50px; width: 600px;
+                font-size: small; color: rgba(255, 255, 255, 0.545);
+            }
+
+            #contact-p4 {
+                position: relative;
+                top: 30px; left: 50px; width: 300px;
+                font-size: x-small; color: rgba(255, 255, 255, 0.545);
+            }
+
+            @media only screen and (max-width: 1100px) {
+
+                .navbar {
+                    content-visibility: hidden;
+                }
+
+                .contact-info {
+                    margin-top: auto; margin-bottom: auto;
+                    margin-left: auto; margin-right: auto;
+                }
+
+                #contact-p1, #contact-p2 {
+                    font-size: 50px;
+                }
+
+                #contact-p3 {
+                    width: 50vw;
+                }
+
+                #contact-p4 {
+                    top: 1vw;
+                }
+            }
+
+            @media only screen and (max-width: 603px) {
+                
+                .html, body {
+                    width: 100%;
+                    height: 110%;
+                    margin: 0;
+                    padding: 0;
+                    overflow-x:hidden;
+                }
+
+                .navbar {
+                }
+                
+                .contact-info {
+                    top: 25px;
+                }
+
+                #contact-p1 {
+                    font-size: 30px;
+                }
+
+                #contact-p2 {
+                    font-size: 30px;
+                    top: 10px;
+                }
+
+                #contact-p3 {
+                    top: -10px;
+                    width: 290px;
+                }
+
+                .Physical-Therapy {
+                    position: relative;
+                    background-color: rgb(255, 255, 255);
+                    top: 100px;
+                    left: -250px;
+                    width: 100px;
+                    height: 160px;
+                    margin: auto;
+                }
+
+                    #physical-vertical1 {
+                        position: relative; top:-160px; left: 200px; width: 200px; height: 130px; background-color: rgb(255, 255, 255);
+                    }
+
+                    #physical-title {
+                        position: relative; font-size: 25px; top: -180px; left: 205px; width:200px;
+                    }
+
+                #physical-purpose {
+                    position: relative; font-size: 15px; top: -200px; left: 200px; width: 200px; opacity: 50%; text-align: left
+                }
+
+                #physical-injuries {
+                    position: relative; font-size: 15px; top: -210px; left: 200px; width:200px; opacity: 50%; text-align: left
+                }
+                #physical-activities {
+                    position: relative; font-size: 15px; top: -220px; left: 200px; width:200px; opacity: 50%; text-align: left
+                }
+
+                .navbar {
+                    visibility: collapse
+                }
+
+                .Occupational-Therapy {
+                    visibility: hidden
+                }
+                .Speech-Therapy {
+                    visibility: hidden
+                }
+                .Massage-Therapy {
+                    visibility: hidden
+                }
+                
+
+            }
+
+            /* .Occupational-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 150px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #occupational-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(172, 179, 216);
+                }
+                #occupational-title {
+                    position: relative; font-size: 25px; top: -300px; left: 125px; width:500px;
+                }
+                #occupational-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 185px; width: 600px; opacity: 50%
+                }
+                #occupational-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 208px; width:600px; opacity: 50%
+                }
+                #occupational-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 198px; width:600px; opacity: 50%
+                }
+
+            .Speech-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 200px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #speech-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(172, 179, 216);
+                }
+                #speech-title {
+                    position: relative; font-size: 25px; top: -300px; left: 93px; width:500px;
+                }
+                #speech-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 208px; width: 600px; opacity: 50%
+                }
+                #speech-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 193px; width:600px; opacity: 50%
+                }
+                #speech-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 182px; width:600px; opacity: 50%
+                }
+
+            .Massage-Therapy {
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                top: 250px;
+                width: 775px;
+                height: 160px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                #massage-vertical1 {
+                    position: relative; top:-160px; left: 30px; width: 200px; height: 130px; background-color: rgb(172, 179, 216);
+                }
+                #massage-title {
+                    position: relative; font-size: 25px; top: -300px; left: 93px; width:500px;
+                }
+                #massage-purpose {
+                    position: relative; font-size: 15px; top: -320px; left: 208px; width: 600px; opacity: 50%;
+                }
+                #massage-injuries {
+                    position: relative; font-size: 15px; top: -330px; left: 193px; width:600px; opacity: 50%;
+                }
+                #massage-activities {
+                    position: relative; font-size: 15px; top: -340px; left: 182px; width:600px; opacity: 50%;
+                } */
+
+        </style>
+        <section class="navbar">
+            <p id="navbar-logo">Therapy</p>
+            <div class="interaction">
+                <a href="#homes"><button id="home" style="border: none; background-color: rgb(172, 179, 216); color: white; font-size: x-small;">Home</button></a>
+                <a href="#programs"><button id="program" style="border: none; background-color: rgb(172, 179, 216); color: white; font-size: x-small;">Program</button></a>
+                <a href="#abouts"><button id="about" style="border: none; background-color: rgb(172, 179, 216); color: white; font-size: x-small;">About</button></a>
+                <button id="nav-signin">Sign in</button>
+                <button id="nav-signup">Sign up</button>
+            </div>
+        </section>
+        <section class="header" id="homes">
+            <p id="header-p1">Your Trusted</p>
+            <p id="header-p2">Therapy Advisory</p>
+            <p id="header-p3">This platform provides valuable resources and guidance to support your injury recovery.</p>
+            <button id="header-signup">Sign Up</button>
+            <section class="header-row">
+                <!-- <div id="header-line-left"></div> -->
+                <p id="available" style="position: relative; top: 20px; font-size: x-small;">Available on</p>
+                <!-- <div id="header-line-right"></div> -->
+            </section>
+            <button id="android">
+                <img id="android-img" src="img-resource/android.png">
+                <p id="android-txt"> Android </p>
+            </button>
+        </section>
+        <section class="programs" id="programs">
+            <section class="Physical-Therapy">
+                <p id="physical-vertical1"><img src="img-resource/physical.jpg" style="width: 200px; height: 130px"></p>
+                <p id="physical-title"> Physical Therapy
+                    <p id="physical-purpose"> Purpose: Focuses on restoring and improving physical function and mobility. </p>
+                    <p id="physical-injuries"> Injuries: Musculoskeletal injuries, post-surgery rehabilitation, sports injuries, etc. </p>
+                    <p id="physical-activities"> Activities: Stretching, strengthening exercises, manual therapy, and other techniques. </p>
+                </p>
+            </section>
+            <section class="Occupational-Therapy">
+                <p id="occupational-vertical1"><img src="img-resource/occupational.jpg" style="width: 200px; height: 130px"></p>
+                <p id="occupational-title"> Occupational Therapy
+                    <p id="occupational-purpose"> Purpose: Aims to help individuals regain independence in daily activities. </p>
+                    <p id="occupational-injuries"> Injuries: Often used for hand injuries, neurological conditions, and rehabilitation. </p>
+                    <p id="occupational-activities"> Activities: Adaptive techniques, strengthening exercises, and functional tasks. </p>
+                </p>
+            </section>
+            <section class="Speech-Therapy">
+                <p id="speech-vertical1"><img src="img-resource/speech.jpg" style="width: 200px; height: 130px"></p>
+                <p id="speech-title"> Speech Therapy
+                    <p id="speech-purpose"> Purpose: Addresses speech, language, communication, and swallowing disorders. </p>
+                    <p id="speech-injuries"> Injuries: Traumatic brain injuries, strokes, and other neurological conditions. </p>
+                    <p id="speech-activities"> Activities: Speech exercises, language therapy, and swallowing exercises. </p>
+                </p>
+            </section>
+            <section class="Massage-Therapy">
+                <p id="massage-vertical1"><img src="img-resource/massage.jpg" style="width: 200px; height: 130px"></p>
+                <p id="massage-title"> Massage Therapy
+                    <p id="massage-purpose"> Purpose: Addresses speech, language, communication, and swallowing disorders. </p>
+                    <p id="massage-injuries"> Injuries: Traumatic brain injuries, strokes, and other neurological conditions. </p>
+                    <p id="massage-activities"> Activities: Speech exercises, language therapy, and swallowing exercises. </p>
+                </p>
+            </section>
+        </section>
+        <section class="footer" id="abouts">
+            <section class="contact-info">
+                <p id="contact-p1"> Start Your </p>  
+                <p id="contact-p2"> Healing Program now! </p>
+                <p id="contact-p3">
+                    This user-friendly self-injury therapy application offers ease of use by providing exercises tailored to the injuries you've experienced.
+                    Moreover, it is accessible at no cost, making it a valuable resource for those who may lack the financial means to hire a therapist,
+                    enabling them to facilitate recovery from their injuries.
+                </p>
+                <p id="contact-p4">© COPYRIGHT 2023 ALL RIGHTS RESERVED</p> 
+            </section>
+        </section>
+    </body>
+</html>
